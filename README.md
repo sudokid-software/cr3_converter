@@ -2,6 +2,19 @@
 
 This project uses libraw to convert cr3 files to jpeg.
 
-You will need to install it yourself.
+## Building
 
-https://www.libraw.org/download#stable
+Clone the repo to your machine as such:
+
+```bash
+$ git clone --recurse-submodules https://github.com/sudokid-software/cr3_converter
+
+$ cd cr3_converter
+
+$ mkdir build
+
+$ cd build
+
+$ cmake ..
+```
+
