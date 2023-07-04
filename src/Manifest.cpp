@@ -73,9 +73,8 @@ Manifest::Manifest(std::string &filepath, std::vector<ImageData> data) noexcept
               << std::endl;
     return false;
   }
-  return true;
 
-  return false;
+  return true;
 }
 
 Manifest::~Manifest() {}
