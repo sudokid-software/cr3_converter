@@ -1,6 +1,7 @@
 #pragma once
 
 #include <converter/ImageData.hpp>
+#include <libraw/libraw.h>
 
 #include <string>
 #include <vector>
