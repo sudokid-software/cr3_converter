@@ -185,7 +185,7 @@ int main([[maybe_unused]] int argc, char *argv[]) {
         thumbnail_files_list.push_back(thumbnail_file_data);
 
         // Free image_data
-        free(image_data);
+        delete image_data;
         ++index;
     }
 
