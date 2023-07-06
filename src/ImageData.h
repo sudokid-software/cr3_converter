@@ -134,7 +134,7 @@ protected:
         }
 
         // Get thumbnail data
-        error_t unpack_response = ImageProcessor.unpack_thumb_ex(thumbnail_index);
+        int unpack_response = ImageProcessor.unpack_thumb_ex(thumbnail_index);
         if (unpack_response != LIBRAW_SUCCESS) {
             std::cout << "Error unpacking thumbnail index: " << thumbnail_index << " File: " << output_file
                       << " Error: " << unpack_response << std::endl;
@@ -144,7 +144,7 @@ protected:
         }
 
         // Write thumbnail data to jpeg full path
-        error_t write_response = ImageProcessor.dcraw_thumb_writer(output_file.c_str());
+        int write_response = ImageProcessor.dcraw_thumb_writer(output_file.c_str());
         if (write_response != LIBRAW_SUCCESS) {
             std::cout << "Error writing thumbnail index: " << thumbnail_index << " File: " << output_file
                       << " Error: " << write_response << std::endl;
