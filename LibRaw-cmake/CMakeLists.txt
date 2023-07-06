@@ -40,6 +40,8 @@ file(TO_CMAKE_PATH "${LIBRAW_PATH}" LIBRAW_PATH)
 
 file(READ ${LIBRAW_PATH}/libraw/libraw_version.h _libraw_version_content)
 
+add_definitions(-w)
+
 # API version strings
 string(REGEX MATCH "#define LIBRAW_MAJOR_VERSION[ \t]*([0-9]*)\n"
              _version_major_match ${_libraw_version_content})
