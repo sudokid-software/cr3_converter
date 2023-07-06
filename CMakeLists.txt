@@ -8,4 +8,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
 # Add link for libraw
 link_libraries(raw)
 
-add_executable(cr3_converter main.cpp)
+add_executable(cr3_converter main.cpp src/ImageData.cpp src/ImageData.h)
