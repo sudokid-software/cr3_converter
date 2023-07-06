@@ -144,7 +144,7 @@ protected:
         }
 
         // Write thumbnail data to jpeg full path
-        error_t write_response = ImageProcessor.dcraw_thumb_writer(output_file.c_str());
+        int write_response = ImageProcessor.dcraw_thumb_writer(output_file.c_str());
         if (write_response != LIBRAW_SUCCESS) {
             std::cout << "Error writing thumbnail index: " << thumbnail_index << " File: " << output_file
                       << " Error: " << write_response << std::endl;
