@@ -7,7 +7,7 @@ This project uses libraw to convert cr3 files to jpeg.
 Clone the repo to your machine as such:
 
 ```bash
-$ git clone --recurse-submodules https://github.com/sudokid-software/cr3_converter
+$ git clone https://github.com/sudokid-software/cr3_converter
 
 $ cd cr3_converter
 
@@ -17,4 +17,3 @@ $ cd build
 
 $ cmake ..
 ```
-
